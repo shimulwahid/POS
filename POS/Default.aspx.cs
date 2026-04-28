@@ -11,7 +11,10 @@ namespace POS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                saleAmount.InnerText = "12.00 Taka";
+            }
         }
     }
 }
