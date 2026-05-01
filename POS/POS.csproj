@@ -69,9 +69,14 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="POS.aspx" />
     <Content Include="Products.aspx" />
     <Content Include="res\Bootstrap\bootstrap.bundle.min.js" />
     <Content Include="res\Bootstrap\bootstrap.min.css" />
+    <Content Include="res\Datatables\jquery.dataTables.min.css" />
+    <Content Include="res\Datatables\jquery.dataTables.min.js" />
+    <Content Include="res\Datatables\dataTables.js" />
+    <Content Include="res\Datatables\jquery-3.7.1.js" />
     <Content Include="res\icon\dashboard.gif" />
     <Content Include="res\icon\icons8-add-shopping-cart.gif" />
     <Content Include="res\icon\orders.gif" />
@@ -91,6 +96,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="POS.aspx.cs">
+      <DependentUpon>POS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POS.aspx.designer.cs">
+      <DependentUpon>POS.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>
