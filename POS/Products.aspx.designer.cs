@@ -22,6 +22,7 @@ namespace POS
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvProducts;
+        protected global::System.Web.UI.WebControls.Panel pnlPermissions;
 
         /// <summary>
         /// modalTitle control.
@@ -94,6 +95,7 @@ namespace POS
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtStock;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl stockHelp;
 
         /// <summary>
         /// btnAddProduct control.

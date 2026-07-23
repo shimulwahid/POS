@@ -24,6 +24,9 @@
         + Add Product
     </button>
 </div>
+    <asp:Panel ID="pnlPermissions" runat="server" CssClass="alert alert-info mx-3">
+        Public editing is enabled, but changing stock quantity and deleting products requires an administrator login.
+    </asp:Panel>
 
     <div>
         <asp:GridView ID="gvProducts" runat="server"
@@ -72,10 +75,9 @@
     <div class="modal fade" id="addProductModal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-        <div class="modal-content">
 
             <div class="modal-header">
-                <h4 class="modal-title" runat="server" id="modalTitle">Add New Product</h4></asp:>
+                <h4 class="modal-title" runat="server" id="modalTitle">Add New Product</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
 
@@ -115,6 +117,7 @@
                     <div class="col-md-6">
                         <label>Stock</label>
                         <asp:TextBox ID="txtStock" runat="server" CssClass="form-control" />
+                        <small id="stockHelp" runat="server" class="text-muted"></small>
                     </div>
 
                 </div>
@@ -128,8 +131,8 @@
                     OnClick="btnAddProduct_Click" />
             </div>
 
-        </div>
     </div>
+</div>
 </div>
     <script>
         $(document).ready(function () {

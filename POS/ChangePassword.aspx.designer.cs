@@ -1,0 +1,1 @@
+namespace POS { public partial class ChangePassword { protected global::System.Web.UI.WebControls.Literal litUsername,litMessage; protected global::System.Web.UI.WebControls.Panel pnlMessage; protected global::System.Web.UI.WebControls.TextBox txtCurrent,txtNew,txtConfirm; protected global::System.Web.UI.WebControls.Button btnChange; } }

@@ -6,14 +6,18 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Configuration;
 
 namespace POS
 {
     public partial class Products : System.Web.UI.Page
     {
-        string cs = "Data Source=DESKTOP-G0J1RC1\\SQL17;Initial Catalog=POS;Integrated Security=True";
+        private string cs { get { return ConfigurationManager.ConnectionStrings["POSDatabase"].ConnectionString; } }
         protected void Page_Load(object sender, EventArgs e)
         {
+            txtStock.ReadOnly = !AuthService.IsAdmin;
+            stockHelp.InnerText = AuthService.IsAdmin ? "You may change available stock." : "Admin login is required to change stock.";
+            pnlPermissions.Visible = !AuthService.IsAdmin;
             if (!IsPostBack)
             {
                 LoadProducts();
@@ -40,6 +44,8 @@ namespace POS
         {
             if (e.Row.RowType == DataControlRowType.DataRow)
             {
+                Button deleteButton = e.Row.FindControl("btnDelete") as Button;
+                if (deleteButton != null) { deleteButton.Enabled = AuthService.IsAdmin; deleteButton.ToolTip = AuthService.IsAdmin ? "Delete product" : "Admin login required"; }
                 // Get Stock value from current row
                 int stock = Convert.ToInt32(DataBinder.Eval(e.Row.DataItem, "Stock"));
 
@@ -72,8 +78,10 @@ namespace POS
             string unit = txtUnit.Text;
             string product_Code = txtProduct_Code.Text;
             string barcode = txtBarcode.Text;
-            decimal price = Convert.ToDecimal(txtPrice.Text);
-            decimal stock = Convert.ToDecimal(txtStock.Text);
+            decimal price, stock = 0;
+            if (string.IsNullOrWhiteSpace(name) || !decimal.TryParse(txtPrice.Text, out price) || price < 0 ||
+                (AuthService.IsAdmin && (!decimal.TryParse(txtStock.Text, out stock) || stock < 0)))
+            { ScriptManager.RegisterStartupScript(this, GetType(), "invalid", "alert('Enter a product name and valid non-negative price and stock.');", true); return; }
 
             if (ViewState["EditID"] != null)
             {
@@ -82,7 +90,7 @@ namespace POS
 
                 using (SqlConnection con = new SqlConnection(cs))
                 {
-                    SqlCommand cmd = new SqlCommand(@"UPDATE Product_TBL SET 
+                    string updateSql = AuthService.IsAdmin ? @"UPDATE Product_TBL SET
                 Product_Name=@name,
                 Cetagory=@category,
                 Unit=@unit,
@@ -90,12 +98,14 @@ namespace POS
                 Barcode_No=@barcode,
                 Unit_Price=@price,
                 Stock=@stock
-                WHERE ser=@id", con);
+                WHERE ser=@id" : @"UPDATE Product_TBL SET Product_Name=@name,Cetagory=@category,Unit=@unit,
+                    Product_code=@product_Code,Barcode_No=@barcode,Unit_Price=@price WHERE ser=@id";
+                    SqlCommand cmd = new SqlCommand(updateSql, con);
 
                     cmd.Parameters.AddWithValue("@name", name);
                     cmd.Parameters.AddWithValue("@category", category);
                     cmd.Parameters.AddWithValue("@unit", unit);
-                    cmd.Parameters.AddWithValue("@stock", stock);
+                    if (AuthService.IsAdmin) cmd.Parameters.AddWithValue("@stock", stock);
                     cmd.Parameters.AddWithValue("@price", price);
                     cmd.Parameters.AddWithValue("@product_Code", product_Code);
                     cmd.Parameters.AddWithValue("@barcode", barcode);
@@ -200,8 +210,11 @@ namespace POS
             }
             else if (e.CommandName == "DeleteRow")
             {
-                System.Diagnostics.Debug.WriteLine("DeleteRow");
-                Response.Write("DeleteRow<br/>");
+                if (!AuthService.IsAdmin)
+                {
+                    ScriptManager.RegisterStartupScript(this, GetType(), "denied", "alert('Admin login is required to delete products.');", true);
+                    return;
+                }
                 using (SqlConnection con = new SqlConnection(cs))
                 {
                     SqlCommand cmd = new SqlCommand("DELETE FROM Product_TBL WHERE ser=@id", con);

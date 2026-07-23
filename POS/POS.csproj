@@ -68,9 +68,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="AdminUsers.aspx" />
+    <Content Include="ChangePassword.aspx" />
     <Content Include="Global.asax" />
     <Content Include="POS.aspx" />
     <Content Include="Products.aspx" />
+    <Content Include="Receipt.aspx" />
+    <Content Include="Reports.aspx" />
     <Content Include="res\Bootstrap\bootstrap.bundle.min.js" />
     <Content Include="res\Bootstrap\bootstrap.min.css" />
     <Content Include="res\Datatables\jquery.dataTables.min.css" />
@@ -111,6 +116,17 @@
     <Compile Include="Products.aspx.designer.cs">
       <DependentUpon>Products.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AuthService.cs" />
+    <Compile Include="AdminLogin.aspx.cs"><DependentUpon>AdminLogin.aspx</DependentUpon><SubType>ASPXCodeBehind</SubType></Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs"><DependentUpon>AdminLogin.aspx</DependentUpon></Compile>
+    <Compile Include="AdminUsers.aspx.cs"><DependentUpon>AdminUsers.aspx</DependentUpon><SubType>ASPXCodeBehind</SubType></Compile>
+    <Compile Include="AdminUsers.aspx.designer.cs"><DependentUpon>AdminUsers.aspx</DependentUpon></Compile>
+    <Compile Include="ChangePassword.aspx.cs"><DependentUpon>ChangePassword.aspx</DependentUpon><SubType>ASPXCodeBehind</SubType></Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs"><DependentUpon>ChangePassword.aspx</DependentUpon></Compile>
+    <Compile Include="Receipt.aspx.cs"><DependentUpon>Receipt.aspx</DependentUpon><SubType>ASPXCodeBehind</SubType></Compile>
+    <Compile Include="Receipt.aspx.designer.cs"><DependentUpon>Receipt.aspx</DependentUpon></Compile>
+    <Compile Include="Reports.aspx.cs"><DependentUpon>Reports.aspx</DependentUpon><SubType>ASPXCodeBehind</SubType></Compile>
+    <Compile Include="Reports.aspx.designer.cs"><DependentUpon>Reports.aspx</DependentUpon></Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>

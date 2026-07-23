@@ -11,7 +11,17 @@ namespace POS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            lnkAdminLogin.Visible = !AuthService.IsAdmin;
+            btnLogout.Visible = AuthService.IsAdmin;
+            lnkAdminUsers.Visible = AuthService.IsSuperAdmin;
+            lnkChangePassword.Visible = AuthService.IsAdmin;
+            lblCurrentUser.Text = AuthService.IsAdmin ? AuthService.Username + " · " + (AuthService.IsSuperAdmin ? "Super Admin" : "Admin") : "Cashier mode";
+        }
 
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session.Remove("AdminUsername"); Session.Remove("AdminRole");
+            Response.Redirect("AdminLogin.aspx");
         }
 
     }

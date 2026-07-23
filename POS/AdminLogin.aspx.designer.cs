@@ -1,0 +1,1 @@
+namespace POS { public partial class AdminLogin { protected global::System.Web.UI.WebControls.Panel pnlError; protected global::System.Web.UI.WebControls.Literal litError; protected global::System.Web.UI.WebControls.TextBox txtUsername,txtPassword; protected global::System.Web.UI.WebControls.Button btnLogin; } }

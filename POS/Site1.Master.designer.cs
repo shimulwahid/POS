@@ -31,6 +31,11 @@ namespace POS
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.HyperLink lnkAdminLogin;
+        protected global::System.Web.UI.WebControls.HyperLink lnkAdminUsers;
+        protected global::System.Web.UI.WebControls.HyperLink lnkChangePassword;
+        protected global::System.Web.UI.WebControls.LinkButton btnLogout;
+        protected global::System.Web.UI.WebControls.Label lblCurrentUser;
 
         /// <summary>
         /// ContentPlaceHolder1 control.

@@ -1,114 +1,36 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="POS.Site1" %>
-
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="POS.Site1" %>
 <!DOCTYPE html>
-
-<html>
-<head runat="server">
-    <title>Shop Management System</title>
-    <!-- Bootstrap -->
-    <link href="res/Bootstrap/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- DataTables CSS -->
-    <link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
-
-    <!-- jQuery -->
-    <script src="res/Datatables/jquery-3.7.1.js"></script>
-
-    <!-- DataTables JS -->
-    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-
-    <!--<link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
-    <link href="res/Datatables/jquery.dataTables.min.css" rel="stylesheet" />
-    <script src="res/Datatables/jquery-3.7.1.js"></script>
-    <script src="res/Datatables/jquery.dataTables.min.js"></script>
-    <script src="res/Datatables/dataTables.js"></script>
-    -->
-
-    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
-
-    <style>
-    .sidebar {
-        width: 180px;
-        transition: 0.3s;
-        overflow-x: hidden;
-    }
-
-    .sidebar-icon{
-        height:30px;
-        width: 30px;
-        flex-shrink: 0;
-    }
-    .sidebar.collapsed {
-        width: 70px;
-        margin-top:40px;
-    }
-
-        .main-content {
-        margin-left: 250px;
-    }
-    .main-content.expanded {
-    margin-left: 70px;
-}
-    .sidebar.collapsed .menu-text {
-    display: none;
-    }
-    
-</style>
-    <script src="res/Bootstrap/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        function toggleSidebar() {
-            document.getElementById("sidebar").classList.toggle("collapsed");
-            document.getElementById("mainContent").classList.toggle("expanded");
-        }
-</script>
-   
-</head>
-    <body>
- 
-        <form id="form1" runat="server">
-     <button type="button" id="toggle-btn"
-        class="navbar-collapse btn btn-dark btn-sm position-fixed m-2 top-0 toggle-btn"
-        style="z-index:1000; text-align:center "
-         onclick="toggleSidebar()"
-        >
-            ☰
-     </button>
-            <div id="sidebar" class="bg-light position-fixed top-0 start-0 vh-100 p-2 sidebar">
-                
-
-                <h4 class="text-dark text-center py-3 menu-text">My App</h4>
-
-                <asp:HyperLink NavigateUrl="~/Default.aspx" runat="server"
-                    CssClass="nav-link text-dark d-flex align-items-center fw-bold fs-5">
-                    <img src="res/icon/dashboard.gif" class="sidebar-icon me-2" /> 
-                    <span class="menu-text">Dashboard</span>
-                </asp:HyperLink>
-
-                <asp:HyperLink NavigateUrl="~/POS.aspx" runat="server"
-                    CssClass="nav-link text-dark d-flex align-items-center fw-bold fs-5 mt-3">
-                    <img src="res/icon/pos.gif" class="sidebar-icon me-2" /> 
-                    <span class="menu-text">POS</span>
-                </asp:HyperLink>
-
-                <asp:HyperLink NavigateUrl="~/Products.aspx" runat="server"
-                    CssClass="nav-link text-dark d-flex align-items-center fw-bold fs-5 mt-3">
-                    <img src="res/icon/icons8-add-shopping-cart.gif" class="sidebar-icon me-2" />
-                    <span class="menu-text">Products</span>
-                </asp:HyperLink>
-
-                <asp:HyperLink NavigateUrl="~/Reports.aspx" runat="server"
-                    CssClass="nav-link text-dark d-flex align-items-center fw-bold fs-5 mt-3">
-                    <img src="res/icon/orders.gif" class="sidebar-icon me-2" /> 
-                    <span class="menu-text">Orders</span>
-                </asp:HyperLink>
-            </div>
-
-        <!-- Main Content Area -->
-        <div id="mainContent" class="main-content">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
-        </div>
-
-        </form>
-    </body>
-</html>
+<html><head runat="server"><meta name="viewport" content="width=device-width,initial-scale=1" />
+<title><%: Page.Title %> - Shop POS</title>
+<link href="res/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+<link href="res/Datatables/jquery.dataTables.min.css" rel="stylesheet" />
+<script src="res/Datatables/jquery-3.7.1.js"></script><script src="res/Datatables/jquery.dataTables.min.js"></script>
+<style>
+:root{--nav:#111827;--nav2:#1f2937;--accent:#4f46e5;--canvas:#f3f4f6;--text:#111827;--muted:#6b7280}
+*{box-sizing:border-box}body{margin:0;background:var(--canvas);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}
+.sidebar{width:235px;background:linear-gradient(180deg,var(--nav),#0b1220);position:fixed;inset:0 auto 0 0;padding:18px 12px;z-index:1030;transition:.25s;overflow-y:auto;box-shadow:6px 0 25px rgba(17,24,39,.12)}
+.brand{color:#fff;font-size:1.25rem;font-weight:800;padding:10px 12px 22px;letter-spacing:.3px}.brand-dot{color:#818cf8}
+.sidebar .nav-link{color:#cbd5e1!important;border-radius:10px;padding:11px 12px;margin:3px 0;font-size:.95rem;font-weight:600;display:flex;align-items:center;gap:11px;transition:.15s}
+.sidebar .nav-link:hover{color:#fff!important;background:rgba(255,255,255,.09);transform:translateX(2px)}
+.nav-symbol{width:27px;height:27px;border-radius:7px;background:rgba(129,140,248,.16);display:inline-flex;align-items:center;justify-content:center;color:#a5b4fc;font-size:.78rem;font-weight:800;flex:none}
+.sidebar-divider{border-color:rgba(255,255,255,.1);margin:15px 8px}.main-content{margin-left:235px;min-height:100vh;transition:.25s}
+.topbar{height:64px;background:#fff;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-between;padding:0 28px;position:sticky;top:0;z-index:1020}.topbar-title{font-weight:700}.user-chip{background:#eef2ff;color:#3730a3;border-radius:999px;padding:7px 12px;font-size:.84rem;font-weight:700}
+.sidebar.collapsed{width:74px}.sidebar.collapsed .menu-text,.sidebar.collapsed .brand-text{display:none}.sidebar.collapsed+.main-content{margin-left:74px}.sidebar.collapsed .nav-link{justify-content:center}.sidebar-toggle{border:0;background:#eef2ff;color:#4338ca;border-radius:8px;width:36px;height:36px;font-weight:800}
+.card{border:0!important;border-radius:14px!important;box-shadow:0 2px 12px rgba(15,23,42,.06)}.btn{border-radius:8px}.form-control,.form-select{border-radius:8px;border-color:#d1d5db}.table{background:#fff}.table thead th{background:#f8fafc;color:#475569;border-color:#e5e7eb;font-size:.82rem;text-transform:uppercase;letter-spacing:.03em}.dataTables_wrapper{padding:2px}
+@media(max-width:768px){.sidebar{transform:translateX(-100%)}.sidebar.mobile-open{transform:translateX(0)}.main-content{margin-left:0!important}.topbar{padding:0 14px}}
+</style><asp:ContentPlaceHolder ID="head" runat="server" /><script src="res/Bootstrap/bootstrap.bundle.min.js"></script></head>
+<body><form id="form1" runat="server">
+<aside id="sidebar" class="sidebar"><div class="brand"><span class="brand-text">Shop<span class="brand-dot">POS</span></span></div>
+<asp:HyperLink NavigateUrl="~/Default.aspx" runat="server" CssClass="nav-link"><span class="nav-symbol">DB</span><span class="menu-text">Dashboard</span></asp:HyperLink>
+<asp:HyperLink NavigateUrl="~/POS.aspx" runat="server" CssClass="nav-link"><span class="nav-symbol">POS</span><span class="menu-text">New Sale</span></asp:HyperLink>
+<asp:HyperLink NavigateUrl="~/Products.aspx" runat="server" CssClass="nav-link"><span class="nav-symbol">PR</span><span class="menu-text">Products</span></asp:HyperLink>
+<asp:HyperLink NavigateUrl="~/Reports.aspx" runat="server" CssClass="nav-link"><span class="nav-symbol">RP</span><span class="menu-text">Sales History</span></asp:HyperLink>
+<hr class="sidebar-divider" />
+<asp:HyperLink ID="lnkAdminLogin" NavigateUrl="~/AdminLogin.aspx" runat="server" CssClass="nav-link"><span class="nav-symbol">IN</span><span class="menu-text">Admin Login</span></asp:HyperLink>
+<asp:HyperLink ID="lnkAdminUsers" NavigateUrl="~/AdminUsers.aspx" runat="server" Visible="false" CssClass="nav-link"><span class="nav-symbol">AD</span><span class="menu-text">Add Admin</span></asp:HyperLink>
+<asp:HyperLink ID="lnkChangePassword" NavigateUrl="~/ChangePassword.aspx" runat="server" Visible="false" CssClass="nav-link"><span class="nav-symbol">PW</span><span class="menu-text">Change Password</span></asp:HyperLink>
+<asp:LinkButton ID="btnLogout" runat="server" Visible="false" OnClick="btnLogout_Click" CssClass="nav-link"><span class="nav-symbol">OUT</span><span class="menu-text">Logout</span></asp:LinkButton>
+</aside>
+<main class="main-content"><header class="topbar"><div class="d-flex align-items-center gap-3"><button type="button" class="sidebar-toggle" onclick="toggleSidebar()">&#9776;</button><span class="topbar-title"><%: Page.Title %></span></div><asp:Label ID="lblCurrentUser" runat="server" CssClass="user-chip" /></header>
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" /></main>
+</form><script>function toggleSidebar(){var s=document.getElementById('sidebar');if(window.innerWidth<=768)s.classList.toggle('mobile-open');else s.classList.toggle('collapsed');}</script></body></html>

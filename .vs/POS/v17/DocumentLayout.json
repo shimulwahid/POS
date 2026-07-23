@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\web development\\asp.net projects\\POS\\",
+  "WorkspaceRootPath": "D:\\Codex\\POS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|d:\\web development\\asp.net projects\\pos\\pos\\pos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\pos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\web development\\asp.net projects\\POS\\pos\\pos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|d:\\codex\\pos\\pos\\pos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\pos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\web development\\asp.net projects\\POS\\pos\\products.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\Codex\\POS\\pos\\pos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\pos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\Codex\\POS\\pos\\products.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\products.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\web development\\asp.net projects\\POS\\pos\\products.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\Codex\\POS\\pos\\products.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\products.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\web development\\asp.net projects\\POS\\pos\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\Codex\\POS\\pos\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\web development\\asp.net projects\\POS\\pos\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\Codex\\POS\\pos\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\web development\\asp.net projects\\POS\\pos\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\Codex\\POS\\pos\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,24 +46,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "POS.aspx.cs",
-              "DocumentMoniker": "D:\\web development\\asp.net projects\\POS\\POS\\POS.aspx.cs",
+              "DocumentMoniker": "D:\\Codex\\POS\\POS\\POS.aspx.cs",
               "RelativeDocumentMoniker": "POS\\POS.aspx.cs",
-              "ToolTip": "D:\\web development\\asp.net projects\\POS\\POS\\POS.aspx.cs",
+              "ToolTip": "D:\\Codex\\POS\\POS\\POS.aspx.cs",
               "RelativeToolTip": "POS\\POS.aspx.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAD4vxkAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAYwA4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-01T20:18:46.888Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "POS.aspx",
-              "DocumentMoniker": "D:\\web development\\asp.net projects\\POS\\POS\\POS.aspx",
+              "DocumentMoniker": "D:\\Codex\\POS\\POS\\POS.aspx",
               "RelativeDocumentMoniker": "POS\\POS.aspx",
-              "ToolTip": "D:\\web development\\asp.net projects\\POS\\POS\\POS.aspx",
+              "ToolTip": "D:\\Codex\\POS\\POS\\POS.aspx",
               "RelativeToolTip": "POS\\POS.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -74,22 +74,21 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Products.aspx.cs",
-              "DocumentMoniker": "D:\\web development\\asp.net projects\\POS\\POS\\Products.aspx.cs",
+              "DocumentMoniker": "D:\\Codex\\POS\\POS\\Products.aspx.cs",
               "RelativeDocumentMoniker": "POS\\Products.aspx.cs",
-              "ToolTip": "D:\\web development\\asp.net projects\\POS\\POS\\Products.aspx.cs",
+              "ToolTip": "D:\\Codex\\POS\\POS\\Products.aspx.cs",
               "RelativeToolTip": "POS\\Products.aspx.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAWwCYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T13:55:39.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-25T13:55:39.884Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Products.aspx",
-              "DocumentMoniker": "D:\\web development\\asp.net projects\\POS\\POS\\Products.aspx",
+              "DocumentMoniker": "D:\\Codex\\POS\\POS\\Products.aspx",
               "RelativeDocumentMoniker": "POS\\Products.aspx",
-              "ToolTip": "D:\\web development\\asp.net projects\\POS\\POS\\Products.aspx",
+              "ToolTip": "D:\\Codex\\POS\\POS\\Products.aspx",
               "RelativeToolTip": "POS\\Products.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -100,9 +99,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Default.aspx.cs",
-              "DocumentMoniker": "D:\\web development\\asp.net projects\\POS\\POS\\Default.aspx.cs",
+              "DocumentMoniker": "D:\\Codex\\POS\\POS\\Default.aspx.cs",
               "RelativeDocumentMoniker": "POS\\Default.aspx.cs",
-              "ToolTip": "D:\\web development\\asp.net projects\\POS\\POS\\Default.aspx.cs",
+              "ToolTip": "D:\\Codex\\POS\\POS\\Default.aspx.cs",
               "RelativeToolTip": "POS\\Default.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -112,9 +111,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Default.aspx",
-              "DocumentMoniker": "D:\\web development\\asp.net projects\\POS\\POS\\Default.aspx",
+              "DocumentMoniker": "D:\\Codex\\POS\\POS\\Default.aspx",
               "RelativeDocumentMoniker": "POS\\Default.aspx",
-              "ToolTip": "D:\\web development\\asp.net projects\\POS\\POS\\Default.aspx",
+              "ToolTip": "D:\\Codex\\POS\\POS\\Default.aspx",
               "RelativeToolTip": "POS\\Default.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -125,9 +124,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Site1.Master",
-              "DocumentMoniker": "D:\\web development\\asp.net projects\\POS\\POS\\Site1.Master",
+              "DocumentMoniker": "D:\\Codex\\POS\\POS\\Site1.Master",
               "RelativeDocumentMoniker": "POS\\Site1.Master",
-              "ToolTip": "D:\\web development\\asp.net projects\\POS\\POS\\Site1.Master",
+              "ToolTip": "D:\\Codex\\POS\\POS\\Site1.Master",
               "RelativeToolTip": "POS\\Site1.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",

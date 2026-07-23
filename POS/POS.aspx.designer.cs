@@ -13,6 +13,10 @@ namespace POS
 
     public partial class POS
     {
+        protected global::System.Web.UI.WebControls.Panel pnlMessage;
+        protected global::System.Web.UI.WebControls.Literal litMessage;
+        protected global::System.Web.UI.WebControls.TextBox txtBarcode;
+        protected global::System.Web.UI.WebControls.Button btnScan;
 
         /// <summary>
         /// gvProducts control.
@@ -58,6 +62,11 @@ namespace POS
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblGrandTotal;
+        protected global::System.Web.UI.WebControls.DropDownList ddlPaymentMethod;
+        protected global::System.Web.UI.WebControls.TextBox txtAmountPaid;
+        protected global::System.Web.UI.WebControls.TextBox txtAmountReturn;
+        protected global::System.Web.UI.WebControls.TextBox txtPaymentReference;
+        protected global::System.Web.UI.WebControls.Button btnCancelCart;
 
         /// <summary>
         /// btnCheckout control.

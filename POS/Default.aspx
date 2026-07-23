@@ -1,90 +1,20 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="POS.Default" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    
-</asp:Content>
-
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- <div class="container-fluid py-3">
-
-    <!-- Header -->
-    <div class="text-center mb-4">
-        <h2 class="fw-bold">Welcome to Shop</h2>
-        <p class="text-muted mb-0">Here's what's happening with your shop today</p>
-    </div>
-
-    <!-- Dashboard Cards -->
-    <div class="row g-4 justify-content-center">
-
-        <!-- Sales -->
-        <div class="col-md-4 col-12">
-            <div class="border border-success border-2 rounded-4 bg-success bg-opacity-10 shadow-sm h-100">
-
-                <div class="bg-success text-white text-center py-2 rounded-top-4 fw-semibold">
-                    Today's Sales
-                </div>
-
-                <div class="p-4 text-center">
-                    <div id="saleAmount" runat="server" class="text-success fw-bold fs-2">
-                        0.00 Taka
-                    </div>
-                    <div class="text-muted small mt-2">
-                        0 transactions
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Stock -->
-        <div class="col-md-4 col-12">
-            <div class="border border-primary border-2 rounded-4 bg-primary bg-opacity-10 shadow-sm h-100">
-
-                <div class="bg-primary text-white text-center py-2 rounded-top-4 fw-semibold">
-                    Products in Stock
-                </div>
-
-                <div class="p-4 text-center">
-
-                    <div id="productQty" runat="server" class="text-primary fw-bold fs-2">
-                        10
-                    </div>
-
-                    <div class="d-flex justify-content-center gap-2 mt-3 flex-wrap">
-
-                        <span id="low_stock_Count" runat="server" class="badge bg-warning text-dark">
-                            0 Low Stock
-                        </span>
-
-                        <span id="out_of_stock_Count" runat="server" class="badge bg-danger">
-                            0 Out of Stock
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Total Sales -->
-        <div class="col-md-4 col-12">
-            <div class="border border-dark border-2 rounded-4 bg-dark bg-opacity-10 shadow-sm h-100">
-
-                <div class="bg-dark text-white text-center py-2 rounded-top-4 fw-semibold">
-                    Total Sales Today
-                </div>
-
-                <div class="p-4 text-center">
-                    <div id="saleQty" runat="server" class="text-dark fw-bold fs-2">
-                        3
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
+<%@ Page Title="Dashboard" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="POS.Default" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server"><style>
+.dashboard{padding:26px}.eyebrow{color:#6366f1;font-weight:800;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em}.page-heading{font-weight:800;margin:.2rem 0}.metric-card{padding:20px;height:100%;position:relative;overflow:hidden}.metric-label{color:#64748b;font-size:.84rem;font-weight:600}.metric-value{font-size:1.7rem;font-weight:800;margin-top:7px}.metric-note{color:#94a3b8;font-size:.78rem;margin-top:5px}.metric-mark{position:absolute;right:18px;top:18px;width:40px;height:40px;border-radius:11px;background:#eef2ff;color:#4f46e5;display:flex;align-items:center;justify-content:center;font-weight:800}
+.section-card{padding:21px;height:100%}.section-title{font-weight:750;font-size:1rem;margin:0}.chart{height:235px;display:flex;align-items:flex-end;gap:12px;padding-top:22px;border-bottom:1px solid #e5e7eb}.bar-col{height:100%;flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;min-width:24px}.bar{width:min(38px,75%);min-height:3px;background:linear-gradient(180deg,#818cf8,#4f46e5);border-radius:7px 7px 2px 2px;position:relative}.bar:hover:after{content:attr(data-value);position:absolute;bottom:100%;left:50%;transform:translate(-50%,-6px);background:#111827;color:#fff;padding:4px 7px;border-radius:5px;font-size:.7rem;white-space:nowrap}.bar-label{font-size:.72rem;color:#64748b;margin-top:8px}.progress-thin{height:7px;background:#eef2f7;border-radius:99px;overflow:hidden}.progress-thin span{height:100%;display:block;background:#6366f1;border-radius:99px}.quick-btn{padding:13px 16px;border:1px solid #e5e7eb;border-radius:10px;color:#334155;text-decoration:none;font-weight:700;display:flex;justify-content:space-between;background:#fff}.quick-btn:hover{border-color:#818cf8;color:#4338ca;background:#f5f3ff}
+@media(max-width:768px){.dashboard{padding:16px}.metric-value{font-size:1.45rem}}
+</style></asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"><div class="dashboard">
+<div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4"><div><div class="eyebrow">Business overview</div><h2 class="page-heading">Good to see you</h2><div class="text-muted"><asp:Literal ID="litDate" runat="server" /></div></div>
+<div class="d-flex gap-2"><asp:HyperLink ID="lnkAddAdmin" runat="server" Visible="false" NavigateUrl="~/AdminUsers.aspx" CssClass="btn btn-outline-primary">+ Add administrator</asp:HyperLink><a href="POS.aspx" class="btn btn-primary">+ New sale</a></div></div>
+<div class="row g-3 mb-4">
+<div class="col-xl-3 col-sm-6"><div class="card metric-card"><div class="metric-mark">TK</div><div class="metric-label">Today's revenue</div><div class="metric-value" id="saleAmount" runat="server">0.00</div><div class="metric-note" id="saleQty" runat="server">0 transactions</div></div></div>
+<div class="col-xl-3 col-sm-6"><div class="card metric-card"><div class="metric-mark">MO</div><div class="metric-label">This month's revenue</div><div class="metric-value" id="monthSales" runat="server">0.00</div><div class="metric-note">Completed sales this month</div></div></div>
+<div class="col-xl-3 col-sm-6"><div class="card metric-card"><div class="metric-mark">AV</div><div class="metric-label">Average sale today</div><div class="metric-value" id="averageSale" runat="server">0.00</div><div class="metric-note">Per transaction</div></div></div>
+<div class="col-xl-3 col-sm-6"><div class="card metric-card"><div class="metric-mark">ST</div><div class="metric-label">Inventory value</div><div class="metric-value" id="inventoryValue" runat="server">0.00</div><div class="metric-note"><span id="productQty" runat="server">0</span> products · <span id="stockUnits" runat="server">0</span> units</div></div></div>
 </div>
-
-</asp:Content>
+<div class="row g-3 mb-4"><div class="col-xl-8"><div class="card section-card"><div class="d-flex justify-content-between"><h3 class="section-title">Sales — last 7 days</h3><span class="text-muted small">Revenue (Taka)</span></div><div class="chart"><asp:Literal ID="litSalesChart" runat="server" /></div></div></div>
+<div class="col-xl-4"><div class="card section-card"><h3 class="section-title mb-3">Stock health</h3><div class="d-flex justify-content-between mb-2"><span>Healthy stock</span><strong id="healthyStock" runat="server">0</strong></div><div class="progress-thin mb-4"><span id="healthyBar" runat="server"></span></div><div class="d-flex gap-2 mb-4"><span id="low_stock_Count" runat="server" class="badge bg-warning text-dark p-2">0 low</span><span id="out_of_stock_Count" runat="server" class="badge bg-danger p-2">0 out</span></div><h3 class="section-title mb-3">Quick actions</h3><div class="d-grid gap-2"><a class="quick-btn" href="POS.aspx"><span>Start checkout</span><span>›</span></a><a class="quick-btn" href="Products.aspx"><span>Manage products</span><span>›</span></a><a class="quick-btn" href="Reports.aspx"><span>View all sales</span><span>›</span></a></div></div></div></div>
+<div class="row g-3"><div class="col-xl-7"><div class="card section-card"><h3 class="section-title mb-3">Recent transactions</h3><asp:GridView ID="gvRecentSales" runat="server" AutoGenerateColumns="false" CssClass="table table-hover align-middle mb-0" GridLines="None" EmptyDataText="No sales yet"><Columns><asp:BoundField DataField="Order_No" HeaderText="Receipt" DataFormatString="#{0}"/><asp:BoundField DataField="Sale_Date" HeaderText="Time" DataFormatString="{0:dd MMM, hh:mm tt}"/><asp:BoundField DataField="Payment_Method" HeaderText="Payment"/><asp:BoundField DataField="Grand_Total" HeaderText="Amount" DataFormatString="{0:N2}"/></Columns></asp:GridView></div></div>
+<div class="col-xl-5"><div class="card section-card"><h3 class="section-title mb-3">Top-selling products</h3><asp:GridView ID="gvTopProducts" runat="server" AutoGenerateColumns="false" CssClass="table table-hover align-middle mb-0" GridLines="None" EmptyDataText="No sales yet"><Columns><asp:BoundField DataField="Product_Name" HeaderText="Product"/><asp:BoundField DataField="Quantity" HeaderText="Qty" DataFormatString="{0:0.##}"/><asp:BoundField DataField="Revenue" HeaderText="Revenue" DataFormatString="{0:N2}"/></Columns></asp:GridView></div></div></div>
+</div></asp:Content>
