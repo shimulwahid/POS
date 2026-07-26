@@ -1,34 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Codex\\POS\\",
+  "WorkspaceRootPath": "D:\\antigravity\\POS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|d:\\codex\\pos\\pos\\pos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\pos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\antigravity\\POS\\POS\\Site1.Master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:POS\\Site1.Master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\Codex\\POS\\pos\\pos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\antigravity\\POS\\POS\\Default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:POS\\Default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\antigravity\\POS\\POS\\Default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:POS\\Default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|d:\\antigravity\\pos\\pos\\receipt.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\receipt.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|d:\\antigravity\\pos\\pos\\receipt.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\receipt.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|d:\\antigravity\\pos\\pos\\pos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\pos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\Codex\\POS\\pos\\products.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\products.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\antigravity\\POS\\POS\\POS.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:POS\\POS.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\Codex\\POS\\pos\\products.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\products.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\antigravity\\POS\\POS\\Reports.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:POS\\Reports.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\Codex\\POS\\pos\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\antigravity\\POS\\POS\\Reports.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:POS\\Reports.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\Codex\\POS\\pos\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\antigravity\\POS\\POS\\Products.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:POS\\Products.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\Codex\\POS\\pos\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:pos\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|D:\\antigravity\\POS\\POS\\Products.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ACD55024-86BB-4532-95AD-104C0C291993}|POS\\POS.csproj|solutionrelative:POS\\Products.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,24 +62,62 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "POS.aspx.cs",
-              "DocumentMoniker": "D:\\Codex\\POS\\POS\\POS.aspx.cs",
-              "RelativeDocumentMoniker": "POS\\POS.aspx.cs",
-              "ToolTip": "D:\\Codex\\POS\\POS\\POS.aspx.cs",
-              "RelativeToolTip": "POS\\POS.aspx.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAYwA4BAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Receipt.aspx.cs",
+              "DocumentMoniker": "D:\\antigravity\\POS\\POS\\Receipt.aspx.cs",
+              "RelativeDocumentMoniker": "POS\\Receipt.aspx.cs",
+              "ToolTip": "D:\\antigravity\\POS\\POS\\Receipt.aspx.cs",
+              "RelativeToolTip": "POS\\Receipt.aspx.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAewB8AAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T20:18:46.888Z",
+              "WhenOpened": "2026-07-26T15:10:26.054Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "Receipt.aspx",
+              "DocumentMoniker": "D:\\antigravity\\POS\\POS\\Receipt.aspx",
+              "RelativeDocumentMoniker": "POS\\Receipt.aspx",
+              "ToolTip": "D:\\antigravity\\POS\\POS\\Receipt.aspx",
+              "RelativeToolTip": "POS\\Receipt.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-26T15:09:15.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Reports.aspx",
+              "DocumentMoniker": "D:\\antigravity\\POS\\POS\\Reports.aspx",
+              "RelativeDocumentMoniker": "POS\\Reports.aspx",
+              "ToolTip": "D:\\antigravity\\POS\\POS\\Reports.aspx",
+              "RelativeToolTip": "POS\\Reports.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-26T13:13:39.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "POS.aspx.cs",
+              "DocumentMoniker": "D:\\antigravity\\POS\\POS\\POS.aspx.cs",
+              "RelativeDocumentMoniker": "POS\\POS.aspx.cs",
+              "ToolTip": "D:\\antigravity\\POS\\POS\\POS.aspx.cs",
+              "RelativeToolTip": "POS\\POS.aspx.cs",
+              "ViewState": "AgIAAAIBAAAAAAAAAAAuwAoBAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T20:18:46.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "POS.aspx",
-              "DocumentMoniker": "D:\\Codex\\POS\\POS\\POS.aspx",
+              "DocumentMoniker": "D:\\antigravity\\POS\\POS\\POS.aspx",
               "RelativeDocumentMoniker": "POS\\POS.aspx",
-              "ToolTip": "D:\\Codex\\POS\\POS\\POS.aspx",
+              "ToolTip": "D:\\antigravity\\POS\\POS\\POS.aspx",
               "RelativeToolTip": "POS\\POS.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -72,11 +126,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Products.aspx.cs",
-              "DocumentMoniker": "D:\\Codex\\POS\\POS\\Products.aspx.cs",
+              "DocumentMoniker": "D:\\antigravity\\POS\\POS\\Products.aspx.cs",
               "RelativeDocumentMoniker": "POS\\Products.aspx.cs",
-              "ToolTip": "D:\\Codex\\POS\\POS\\Products.aspx.cs",
+              "ToolTip": "D:\\antigravity\\POS\\POS\\Products.aspx.cs",
               "RelativeToolTip": "POS\\Products.aspx.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAWwCYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -84,11 +138,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "Products.aspx",
-              "DocumentMoniker": "D:\\Codex\\POS\\POS\\Products.aspx",
+              "DocumentMoniker": "D:\\antigravity\\POS\\POS\\Products.aspx",
               "RelativeDocumentMoniker": "POS\\Products.aspx",
-              "ToolTip": "D:\\Codex\\POS\\POS\\Products.aspx",
+              "ToolTip": "D:\\antigravity\\POS\\POS\\Products.aspx",
               "RelativeToolTip": "POS\\Products.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -97,23 +151,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Default.aspx.cs",
-              "DocumentMoniker": "D:\\Codex\\POS\\POS\\Default.aspx.cs",
+              "DocumentMoniker": "D:\\antigravity\\POS\\POS\\Default.aspx.cs",
               "RelativeDocumentMoniker": "POS\\Default.aspx.cs",
-              "ToolTip": "D:\\Codex\\POS\\POS\\Default.aspx.cs",
+              "ToolTip": "D:\\antigravity\\POS\\POS\\Default.aspx.cs",
               "RelativeToolTip": "POS\\Default.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T12:00:25.616Z"
+              "WhenOpened": "2026-04-25T12:00:25.616Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Default.aspx",
-              "DocumentMoniker": "D:\\Codex\\POS\\POS\\Default.aspx",
+              "DocumentMoniker": "D:\\antigravity\\POS\\POS\\Default.aspx",
               "RelativeDocumentMoniker": "POS\\Default.aspx",
-              "ToolTip": "D:\\Codex\\POS\\POS\\Default.aspx",
+              "ToolTip": "D:\\antigravity\\POS\\POS\\Default.aspx",
               "RelativeToolTip": "POS\\Default.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -122,16 +177,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Site1.Master",
-              "DocumentMoniker": "D:\\Codex\\POS\\POS\\Site1.Master",
+              "DocumentMoniker": "D:\\antigravity\\POS\\POS\\Site1.Master",
               "RelativeDocumentMoniker": "POS\\Site1.Master",
-              "ToolTip": "D:\\Codex\\POS\\POS\\Site1.Master",
+              "ToolTip": "D:\\antigravity\\POS\\POS\\Site1.Master",
               "RelativeToolTip": "POS\\Site1.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2026-04-25T06:51:56.489Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Reports.aspx.cs",
+              "DocumentMoniker": "D:\\antigravity\\POS\\POS\\Reports.aspx.cs",
+              "RelativeDocumentMoniker": "POS\\Reports.aspx.cs",
+              "ToolTip": "D:\\antigravity\\POS\\POS\\Reports.aspx.cs",
+              "RelativeToolTip": "POS\\Reports.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAMwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-26T13:22:49.761Z"
             }
           ]
         }

@@ -188,7 +188,7 @@ namespace POS
 
         protected void txtDiscount_TextChanged(object sender, EventArgs e) { CalculateTotals(); }
 
-        private void BindCart() { gvCart.DataSource = Cart; gvCart.DataBind(); CalculateTotals(); }
+        private void BindCart() { gvCart.DataSource = Cart; gvCart.DataBind(); cartCount.InnerText = Cart.Rows.Count.ToString(); CalculateTotals(); }
 
         private void CalculateTotals()
         {
@@ -263,6 +263,14 @@ namespace POS
 
         private static bool TryMoney(string text, out decimal value)
         { return decimal.TryParse(text, NumberStyles.Number, CultureInfo.CurrentCulture, out value) || decimal.TryParse(text, NumberStyles.Number, CultureInfo.InvariantCulture, out value); }
+
+        protected string GetStockBadgeClass(object stockObj)
+        {
+            decimal stock = Convert.ToDecimal(stockObj);
+            if (stock <= 0) return "stock-badge stock-out";
+            if (stock < 10) return "stock-badge stock-low";
+            return "stock-badge stock-ok";
+        }
 
         private void ShowMessage(string message, bool success)
         { pnlMessage.Visible = true; pnlMessage.CssClass = "alert " + (success ? "alert-success" : "alert-danger"); litMessage.Text = message; }

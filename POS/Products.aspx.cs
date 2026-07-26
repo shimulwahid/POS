@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -219,14 +219,20 @@ namespace POS
                 {
                     SqlCommand cmd = new SqlCommand("DELETE FROM Product_TBL WHERE ser=@id", con);
                     cmd.Parameters.AddWithValue("@id", productId);
-                    Console.WriteLine("ProductID=" + productId);
-
                     con.Open();
                     cmd.ExecuteNonQuery();
                 }
 
                 LoadProducts(); // refresh grid
             }
+        }
+
+        protected string GetStockBadgeClass(object stockObj)
+        {
+            decimal stock = Convert.ToDecimal(stockObj);
+            if (stock <= 0) return "stock-badge stock-out";
+            if (stock < 10) return "stock-badge stock-low";
+            return "stock-badge stock-ok";
         }
     }
 }

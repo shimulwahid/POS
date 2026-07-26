@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,7 +15,7 @@ namespace POS
             btnLogout.Visible = AuthService.IsAdmin;
             lnkAdminUsers.Visible = AuthService.IsSuperAdmin;
             lnkChangePassword.Visible = AuthService.IsAdmin;
-            lblCurrentUser.Text = AuthService.IsAdmin ? AuthService.Username + " · " + (AuthService.IsSuperAdmin ? "Super Admin" : "Admin") : "Cashier mode";
+            lblCurrentUser.Text = "<span class='user-dot'></span>" + (AuthService.IsAdmin ? AuthService.Username + " · " + (AuthService.IsSuperAdmin ? "Super Admin" : "Admin") : "Cashier mode");
         }
 
         protected void btnLogout_Click(object sender, EventArgs e)

@@ -21,4 +21,5 @@ namespace POS { public partial class Default : Page {
  private void RenderEmptyChart(){var dt=new DataTable();dt.Columns.Add("DayValue",typeof(DateTime));dt.Columns.Add("Amount",typeof(decimal));for(int i=6;i>=0;i--)dt.Rows.Add(DateTime.Today.AddDays(-i),0m);RenderChart(dt);}
  private void RenderChart(DataTable dt){decimal max=0;foreach(DataRow r in dt.Rows)max=Math.Max(max,Convert.ToDecimal(r["Amount"]));var html=new StringBuilder();foreach(DataRow r in dt.Rows){decimal amount=Convert.ToDecimal(r["Amount"]);int height=max==0?3:Math.Max(3,(int)(amount/max*185));html.AppendFormat("<div class='bar-col'><div class='bar' style='height:{0}px' data-value='{1}'></div><div class='bar-label'>{2}</div></div>",height,HttpUtility.HtmlAttributeEncode(Money(amount)),Convert.ToDateTime(r["DayValue"]).ToString("ddd"));}litSalesChart.Text=html.ToString();}
  private static string Money(object v){return Convert.ToDecimal(v).ToString("N2");}
+ protected string GetPaymentClass(string method){switch((method??"").ToLower()){case"cash":return"cash";case"card":return"card";case"mobile banking":return"mobile";default:return"other";}}
 } }

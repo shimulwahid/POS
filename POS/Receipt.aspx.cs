@@ -25,13 +25,13 @@ namespace POS
                           litOrderNo.Text=orderNo.ToString(); litDate.Text=Convert.ToDateTime(r["Sale_Date"]).ToString("dd-MMM-yyyy hh:mm tt");
                           litSubtotal.Text=Money(r["Subtotal"]); litDiscount.Text=Money(r["Discount"]); litTotal.Text=Money(r["Grand_Total"]);
                           litPaid.Text=Money(r["Amount_Paid"]); litChange.Text=Money(r["Change_Amount"]); litMethod.Text=HttpUtility.HtmlEncode(r["Payment_Method"].ToString());
-                          string reference=r["Payment_Reference"].ToString(); phReference.Visible=reference.Length>0; litReference.Text=HttpUtility.HtmlEncode(reference); } }
+                        } }
                     using (var da = new SqlDataAdapter("SELECT Product_Name,Qty,Unit_Price,Total_Price FROM Sale_history WHERE Order_No=@order ORDER BY Product_Name", con))
                     { da.SelectCommand.Parameters.Add("@order",SqlDbType.Int).Value=orderNo; var items=new DataTable(); da.Fill(items); gvItems.DataSource=items; gvItems.DataBind(); }
                 }
                 litShopName.Text=HttpUtility.HtmlEncode(ConfigurationManager.AppSettings["ShopName"] ?? "My Shop");
                 litShopAddress.Text=HttpUtility.HtmlEncode(ConfigurationManager.AppSettings["ShopAddress"] ?? "Sales Receipt");
-                if (Request.QueryString["print"] == "1") litAutoPrint.Text="<script>window.addEventListener('load',function(){window.print();});</script>";
+
             }
             catch (Exception ex) { ShowError(HttpUtility.HtmlEncode(ex.Message)); }
         }
